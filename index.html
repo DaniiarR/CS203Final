@@ -1,9 +1,177 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Sample web site</title>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/210cd92625.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<h1>Sample web site</h1>
+<!-- Top Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="img/logo.png" alt="logo">
+        Yuki Shop KG
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Disabled</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contact us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Top Jumbotron -->
+<div class="jumbotron jumbotron-fluid collapse show" id="top_jumbotron">
+    <div class="row">
+        <div class="col-11 my-auto">
+            <h4 class="text-center"><strong>Hey! </strong> 15% discount is available until the January 1st!</h4>
+        </div>
+        <div class="col-1 my-auto">
+            <button class="btn fun" data-toggle="collapse" data-target="#top_jumbotron" ><i class="far fa-window-close pull-right"></i></button>
+        </div>
+    </div>
+</div>
+
+<!-- Carousel -->
+<div id="slides" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+        <li data-target="#slides" data-slide-to="0" class="active"></li>
+        <li data-target="#slides" data-slide-to="1"></li>
+        <li data-target="#slides" data-slide-to="2"></li>
+        <li data-target="#slides" data-slide-to="3"></li>
+        <li data-target="#slides" data-slide-to="4"></li>
+    </ul>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="img/missha.png" alt="missha logo">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="img/cosrx.png" alt="corx logo">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="img/banilaco.png" alt="banilaco logo">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="img/elizaveccaLogo.webp" alt="elizavecca logo">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="img/sulwhasoo.png" alt="skinfood logo">
+        </div>
+        <a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#slides" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<!-- Carousel Jumbotron -->
+    <div class="container-fluid" >
+        <div class="row jumbotron">
+            <div class="col-xs-12 col-sm-12 col-md-9 col-xl-10">
+                <p class="lead">Our shop is the best choice if you want to get only original skincare products.</p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 col-xl-2">
+                <a href="#"><button type="button" class="btn btn-outline-primary btn-lg">Buy Now</button></a>
+            </div>
+        </div>
+    </div>
+<!-- About us section -->
+<div class="container-fluid padding">
+    <div class="row welcome text-center parallax">
+        <div class="col-12">
+            <h1 class="display-4">About us</h1>
+        </div>
+        <hr>
+        <div class="col-12">
+            <p class="lead">Our shop was opened back in 2012 to help people struggling with skin problems. We have successfully delivered more than 1,000,000 products and have more than 50,000 5-star ratings on kpopcosmetics.com</p>
+        </div>
+    </div>
+</div>
+
+<!-- Three column section -->
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <img class="imgThreeColumn" src="img/quality.svg" alt="quality">
+            <h3>QUALITY</h3>
+            <p>We provide only the best quality products received directly from the manufacturer.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <img class="imgThreeColumn" src="img/delivery.svg" alt="quality">
+            <h3>DELIVERY</h3>
+            <p>We deliver our products quickly, carefully, and precisely.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <img class="imgThreeColumn" src="img/money.svg" alt="quality">
+            <h3>PRICE</h3>
+            <p>Our prices are in average 20% lower than in the local markets.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid text-center">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="container" id="footer_logo">
+                <img  src="img/logo.png" alt="logo">
+                <p class="my-auto">Yuki Shop KG</p>
+            </div>
+            <hr class="light">
+            <p>+996 773 438 888</p>
+            <p>daniiar.raiymkulov@iaau.edu.kg</p>
+            <p>234, Repin street</p>
+            <p>Bishkek, Kyrgyzstan</p>
+        </div>
+        <div class="col-md-4">
+            <hr class="light">
+            <h5>Our hours</h5>
+            <hr class="light">
+            <p>Monday - Friday: 9am - 8pm</p>
+            <p>Saturday: 11am - 5pm</p>
+            <p>Sunday: closed</p>
+        </div>
+        <div class="col-md-4">
+            <hr class="light">
+            <h5>Connect</h5>
+            <hr class="light">
+            <div class="container" id="footer_connect">
+                <i class="fab fa-instagram fa-2x"></i>
+                <i class="fab fa-whatsapp fa-2x"></i>
+                <i class="fab fa-twitter fa-2x"></i>
+                <i class="fab fa-facebook fa-2x"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <hr class="light">
+        <h5>&copy; yukicosmetics.com</h5>
+    </div>
+</footer>
+
 </body>
 </html>
