@@ -16,32 +16,23 @@ $(function () {
             bodyText: "Hey! We have recorded your request.",
             isTransactional: false
         })
-            .then(data => console.log(JSON.stringify(data))) // JSON-строка полученная после вызова `response.json()`
+            .then(data => console.log(JSON.stringify(data))) //JSON String obtained after calling 'response.json()'
             .catch(error => console.error(error));
 
         function postData(url = '', data = {}) {
-            // Значения по умолчанию обозначены знаком *
+            // * means default value
             return fetch(url, {
                 method: 'POST', // *GET, POST, PUT, DELETE, etc.
-                body: JSON.stringify(data), // тип данных в body должен соответвовать значению заголовка "Content-Type"
+                body: JSON.stringify(data),
             })
-                .then(response => response.json()); // парсит JSON ответ в Javascript объект
+                .then(response => response.json()); // parses JSON response back to JavaScript obect
         }
 
         var textName = $("<p></p>").text("Thank you for your interest, " + name + " " + surname + ".");
         var textEmail = $("<p></p>").text("We have sent you an email to " + email + ".");
         $("#modalWindow").append(textName, textEmail);
     });
-    // let checkend = "";
-    // let count = $('.custom-checkbox').length;
-    // console.log(count);
-    // let i =0;
-    let checkedCheckboxed = "";
-    for (let i = 0; i <= 7; i++) {
-        if ($(".custom-checkbox .custom-control-input")[i].prop("checked") == true  ) {
-            checkedCheckboxed += $(".lead .checkbox-label").val();
-        }
-    }
+
     console.log(checkedCheckboxed);
     // $('.custom-checkbox .custom-control-input').click(()=>{
     //     $('.custom-checkbox ').addClass("check");

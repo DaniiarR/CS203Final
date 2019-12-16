@@ -61,7 +61,7 @@ footer {
 
 hr.light {
     border-top: 1px solid #d5d5d5;
-    width: 75%;
+    width: 100%;
 }
 
 #footer_logo {
@@ -74,6 +74,10 @@ hr.light {
 #footer_connect {
     display: flex;
     justify-content: space-between;
+}
+
+#footer_connect a i {
+    color: white;
 }
 /* On small screens, set height to 'auto' for sidenav and grid */
 @media screen and (max-width: 767px) {
