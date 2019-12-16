@@ -2,18 +2,7 @@
 
 html, body {
     font-family: 'Montserrat', sans-serif;
-    background-image: url("../img/twiceBlurred.jpg");
-    height: 100%;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     overflow-x: hidden;
-}
-
-.card-deck .card {
-    margin: 30px;
 }
 /* Remove the navbar's default margin-bottom and rounded borders */
 .navbar {
@@ -45,6 +34,23 @@ html, body {
     padding-bottom: 30%;
 }
 
+#heading {
+    padding: 1em;
+}
+
+.list-image {
+    width: 70%;
+    height: 60%;
+}
+.routine-list-number {
+    /*font-size: 15em;*/
+}
+
+#worthIt {
+    padding-top: 2.2em;
+    padding-bottom: 2.2em;
+}
+/* Set black background color, white text and some padding */
 footer {
     background-color: #555;
     color: white;
@@ -56,7 +62,6 @@ footer {
 #footer_logo img {
     width: 20%;
     height: auto;
-
 }
 
 hr.light {
@@ -66,7 +71,7 @@ hr.light {
 
 #footer_logo {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     font-family: 'Montserrat', sans-serif;
     font-size: x-large;
 }
